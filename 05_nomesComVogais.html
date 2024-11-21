@@ -7,8 +7,23 @@
 
     //ENTRADA
 
-    //PROCESSAMENTO
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+
+    let ordemAlfabetica = [];
+
+      //PROCESSAMENTO
+
+    for ( let item of listaDeNomes) {
+        if ( item[0] == "A" || item[0] == "E" || item[0] == "I" || item[0] == "O" || item[0] == "U") {
+
+        ordemAlfabetica.push(item); 
+    }
+    }
+
 
     //SAÍDA
+    document.write(`Ordem alfabética: <br>${ordemAlfabetica.sort().join("<br> ")}`);
+
+
 
 </script>
